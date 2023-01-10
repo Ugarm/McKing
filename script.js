@@ -102,7 +102,7 @@ function removeItem(key) {
 //ends order and resets price + displayed items
 function order() {
     let checkOrder = 0
-
+    // checks if cart is not empty
     for (let i = 0; i < menu.length; i++){
         if (menu[i].ordered == 0){
             checkOrder++
@@ -112,8 +112,11 @@ function order() {
     if (checkOrder == menu.length){
         console.log("Your cart is empty")
     } else {
-        console.log('The amount of your order is now : ', totalPrice, '€')
+        // displays price in the console and resets price
+        console.log('The total amount of your order is : ', totalPrice, '€')
         totalPrice = 0
+
+        // checks what item has been ordered and displays the order as an array in the console
         let newArr = []
         for (let i = 0; i < menu.length; i++){
             if (menu[i].ordered > 0){
@@ -122,14 +125,18 @@ function order() {
             }
         }
         console.log('You have ordered ', newArr)
+
+        // resets innerHTML data (not useful as such because pages are going to be reloaded, but shows that it can be done in other cases)
         document.getElementById('totalprice').innerHTML = "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>";
         document.getElementById('ordereditems').innerHTML = ""
         
+        // resets "ordered" items number (same as above, not useful as such but good to know)
         for (let i = 0; i < menu.length; i++){
             menu[i].ordered = 0
         }
 
-        window.location = 'confirm.html'
+        
+        setTimeout(() => { window.location = 'confirm.html' }, 4000)
     }
 
     
