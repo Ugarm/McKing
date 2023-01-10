@@ -3,7 +3,6 @@ let menu = [{
         'price': 8.50,
         'ordered': 0,
     },
-
     {
         'itemName': 'drink',
         'price': 4,
