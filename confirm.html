@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="header">
+        <h1 id="header_title">Mc King</h1>
+    </div>
+
+    <div class="app_title">
+
+    </div>
+
+    <div class="order" style="margin-top:15rem;">
+        <button class="item_order" onclick="order()">
+            <p id="btn_order">Order confirmed !</p>
+            
+        </button>
+        <p style="margin-top:3rem; height:30px; border: 1px solid black">You will be redirected to our home page in a few seconds.</p>
+    </div>
+    <script>
+        setTimeout(() => { window.location = 'index.html' }, 3000)      
+    </script>
+</body>
+</html>

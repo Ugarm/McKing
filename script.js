@@ -101,21 +101,38 @@ function removeItem(key) {
 
 //ends order and resets price + displayed items
 function order() {
-    console.log('The amount of your order is now : ', totalPrice, '€')
-    totalPrice = 0
-    let newArr = []
+    let checkOrder = 0
+
     for (let i = 0; i < menu.length; i++){
-        if (menu[i].ordered > 0){
-            newArr.push(menu[i].ordered)
-            newArr.push(menu[i].itemName)
+        if (menu[i].ordered == 0){
+            checkOrder++
         }
     }
-    console.log('You have ordered ', newArr)
-    document.getElementById('totalprice').innerHTML = "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>";
-    document.getElementById('ordereditems').innerHTML = ""
-    
-    for (let i = 0; i < menu.length; i++){
-        menu[i].ordered = 0
+
+    if (checkOrder == menu.length){
+        console.log("Your cart is empty")
+    } else {
+        console.log('The amount of your order is now : ', totalPrice, '€')
+        totalPrice = 0
+        let newArr = []
+        for (let i = 0; i < menu.length; i++){
+            if (menu[i].ordered > 0){
+                newArr.push(menu[i].ordered)
+                newArr.push(menu[i].itemName)
+            }
+        }
+        console.log('You have ordered ', newArr)
+        document.getElementById('totalprice').innerHTML = "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>";
+        document.getElementById('ordereditems').innerHTML = ""
+        
+        for (let i = 0; i < menu.length; i++){
+            menu[i].ordered = 0
+        }
+
+        window.location = 'confirm.html'
     }
 
+    
+
 }
+
