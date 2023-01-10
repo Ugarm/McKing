@@ -1,0 +1,184 @@
+body {
+    background: rgb(255, 243, 238);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding: 0px;
+    margin: 0;
+    height: auto;   
+    background: linear-gradient(rgb(245, 153, 67), rgb(255, 243, 238));
+    margin-bottom: 2rem;
+}
+
+.app_title {
+    display: flex;
+}
+
+
+#header_title {
+    font-family: Fantasy;
+    font-size: 75px;
+    font-style: bold;
+    background: -webkit-linear-gradient(rgb(235, 65, 65), rgb(253, 215, 158));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 500px;
+    gap: 2rem;
+    margin-top: 13rem;
+    margin-left: 15%;
+}
+
+.grid .items {
+    margin: auto;
+    border: 2px solid #000000;  
+    flex-direction: column; 
+}
+
+.items_title {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    margin: auto;
+    color: rgb(255, 62, 62);
+    font-size: 1.6rem;
+    font-weight: bolder;
+    height: 40px ;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.items img {
+    width:300px;
+    height: 300px;
+}
+
+.text {
+     width: 100%;
+     background: rgb(248, 169, 117);
+}
+
+.text p {
+    width: 100%;
+    margin-top: 25%;
+    font-size: 1.5rem;
+    font-style: italic;
+    
+}
+
+
+.btn_items {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    border: none;
+    display: grid;
+    border: 1px solid #000000;  
+    height: 50px;
+    
+}
+
+.btn_items p {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    margin: auto;
+    color: rgb(255, 62, 62);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.btn_items:hover {
+    color: rgb(255, 62, 62);
+    font-size: 1.6rem;
+    font-weight: bolder;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.order {
+
+    margin: auto;
+    margin-top: 2rem;
+    width: 50%;
+    padding: 10px;
+
+}
+
+
+.item_order {
+    height: 100%;
+    width: 100%;
+    background: rgb(248, 169, 117);
+    font-style: italic;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+}
+
+
+#btn_order {
+    margin: auto;
+    font-size: 50px;
+}
+
+#btn_order:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+#order_price {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    border: none;
+    display: grid;
+    height: 50px;
+}
+
+.order #totalprice {
+    border: 1px solid #000000; 
+}
+
+.order p {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+
+h1, p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+#ordereditems {
+    border: 1px solid #000000;
+}
+
+#burger, #drink, #fries, #dessert {
+    background: rgb(248, 169, 117);
+    width: 100%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
