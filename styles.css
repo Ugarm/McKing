@@ -36,15 +36,15 @@ header {
 }
 
 .grid .items {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     border: 25px inset #ffafaf;  
     flex-direction: column; 
 }
 
 .title {
-    height: 100px;
+    height: 80px;
     margin: auto;
 }
 .title p {
@@ -59,8 +59,8 @@ header {
 
 
 .items img {
-    width:300px;
-    height: 300px;
+    width:200px;
+    height: 200px;
     margin-left: 25%;
 }
 
@@ -83,8 +83,8 @@ header {
     width: 100%;
     border: none;
     display: grid;
-    border: 3px ridge #ff9090;
-    height: 80px;
+    border: 2px ridge #ff9090;
+    height: 40px;
     
 }
 
@@ -93,7 +93,7 @@ header {
     width: 100%;
     margin: auto;
     color: rgb(243, 0, 0);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bolder;
 }
 
