@@ -1,5 +1,5 @@
 body {
-    background: rgb(255, 239, 232);
+    background-image: linear-gradient(to bottom right, rgb(255, 237, 219), rgb(255, 235, 235));
 }
 
 html, body {
@@ -79,20 +79,20 @@ header {
 
 
 .btn_items {
-    background: rgb(248, 169, 117);
+    background: rgb(255, 222, 199);
     width: 100%;
     border: none;
     display: grid;
-    border: 3px ridge rgb(255, 108, 108);
+    border: 3px ridge #ff9090;
     height: 80px;
     
 }
 
 .btn_items p {
-    background: rgb(248, 169, 117);
+    
     width: 100%;
     margin: auto;
-    color: rgb(255, 62, 62);
+    color: rgb(243, 0, 0);
     font-size: 1.6rem;
     font-weight: bolder;
 }
