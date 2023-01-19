@@ -1,5 +1,5 @@
 body {
-    background: rgb(255, 243, 238);
+    background: rgb(255, 239, 232);
 }
 
 html, body {
@@ -8,62 +8,60 @@ html, body {
 }
 
 
-
-.header {
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    padding: 0px;
-    margin: 0;
-    height: auto;   
-    background: linear-gradient(rgb(245, 153, 67), rgb(255, 243, 238));
-    margin-bottom: 2rem;
-}
-
 .app_title {
     display: flex;
 }
 
+header {
+    border-bottom: 6px ridge rgb(244, 93, 93); 
+}
 
 #header_title {
-    font-family: Fantasy;
-    font-size: 75px;
+    font-family: "Times New Roman",Times,serif;;
+    font-size: 50px;
     font-style: bold;
     background: -webkit-linear-gradient(rgb(235, 65, 65), rgb(253, 215, 158));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgb(99, 51, 51); 
+
+    display: flex;
+    justify-content:space-around
 }
 
 .grid {
+    gap: 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 500px;
-    gap: 2rem;
-    margin-top: 13rem;
-    margin-left: 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .grid .items {
+    width: 600px;
+    height: 600px;
     margin: auto;
-    border: 2px solid #000000;  
+    border: 25px inset #ffafaf;  
     flex-direction: column; 
 }
 
-.items_title {
-    background: rgb(248, 169, 117);
-    width: 100%;
+.title {
+    height: 100px;
     margin: auto;
+}
+.title p {
+
     color: rgb(255, 62, 62);
-    font-size: 1.6rem;
+   
+    font-size: 2.3rem;
     font-weight: bolder;
-    height: 40px ;
+    
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
 
 .items img {
     width:300px;
     height: 300px;
+    margin-left: 25%;
 }
 
 .text {
@@ -85,8 +83,8 @@ html, body {
     width: 100%;
     border: none;
     display: grid;
-    border: 1px solid #000000;  
-    height: 50px;
+    border: 3px ridge rgb(255, 108, 108);
+    height: 80px;
     
 }
 
@@ -110,10 +108,10 @@ html, body {
 .order {
 
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 50%;
     padding: 10px;
-
+    border: 10px ridge rgb(255, 223, 223);
 }
 
 
@@ -181,4 +179,11 @@ h1, p {
     color: rgb(0, 0, 0);
     font-size: 1.6rem;
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 550px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr;
+    }
 }

@@ -33,16 +33,16 @@ function addItem(key) {
     itemIndex = parseInt(key.id)
     totalPrice = totalPrice + menu[itemIndex].price
     console.log('The amount of your order is now : ', totalPrice, '€ ')
-    document.getElementById('totalprice').innerHTML = "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>"
+    document.getElementById('totalprice').innerHTML += "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>"
 
     //displays or updates order infos
     if (menu[itemIndex].ordered == 0) {
         menu[itemIndex].ordered = menu[itemIndex].ordered + 1
-        document.getElementById('ordereditems').innerHTML += "<p id='" + `${menu[itemIndex].itemName}` + "'>" + `${menu[itemIndex].ordered}` + ' ' + `${menu[itemIndex].itemName}` + "</p>"
+        document.getElementById('ordereditems').innerHTML = "<p id='ordereditems" + `${menu[itemIndex].itemName}` + "'>" + `${menu[itemIndex].ordered}` + ' ' + `${menu[itemIndex].itemName}` + "</p>"
     } else {
         menu[itemIndex].ordered = menu[itemIndex].ordered + 1
         document.getElementById(menu[itemIndex].itemName).remove()  
-        document.getElementById('ordereditems').innerHTML += "<p id='" + `${menu[itemIndex].itemName}` + "'>" + ' ' + `${menu[itemIndex].ordered}` + `${menu[itemIndex].itemName}` + "</p>"
+        document.getElementById('ordereditems').innerHTML += "<p id='ordereditems" + `${menu[itemIndex].itemName}` + "'>" + ' ' + `${menu[itemIndex].ordered}` + `${menu[itemIndex].itemName}` + "</p>"
     }
 
     console.log(menu[itemIndex].ordered)
@@ -57,7 +57,7 @@ function rewrite() {
         menu[itemIndex].ordered = menu[itemIndex].ordered - 1
         const element = document.getElementById(menu[itemIndex].itemName)
         element.remove()
-        document.getElementById('ordereditems').innerHTML += "<p id='" + `${menu[itemIndex].itemName}` + "'>" + ' ' + `${menu[itemIndex].ordered}` + `${menu[itemIndex].itemName}` + "</p>"
+        document.getElementById('ordereditems').innerHTML += "<p id='ordereditems'" + `${menu[itemIndex].itemName}` + "'>" + ' ' + `${menu[itemIndex].ordered}` + `${menu[itemIndex].itemName}` + "</p>"
     } else if (menu[itemIndex].ordered == 1) {
         totalPrice = totalPrice - menu[itemIndex].price
         document.getElementById('totalprice').innerHTML = "<p id='order_price'>" + "Total amount : " + `${totalPrice}` + "€" + "</p>"
@@ -141,4 +141,6 @@ function order() {
     
 
 }
+
+
 

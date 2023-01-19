@@ -13,19 +13,19 @@
 
 
 <body>
-
-    <div class="header">
-        <h1 id="header_title">Mc King</h1>
-    </div>
-
-    <div class="app_title">
-
-    </div>
+    
+    
+    
+        <header id="header_title"><h1>Mc King</h1></header>
+    
 
     <div class="grid">
 
         <div class="items">
-            <p class="items_title">meh burger</p>
+            <div class="title">
+                <p>ok tier burger</p>
+            </div>
+            
             <img src="img/burger.webp" alt="burger" />
             <div class="text">
                 <button class="btn_items" id="0" onclick="addItem(this)">
@@ -38,7 +38,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">average lemonade</p>
+            <div class="title">
+                <p>bubbleless soda</p>
+            </div>
             <img src="img/boisson.jpg" alt="boisson" />
             <div class="text">
                 <button class="btn_items" id="1" onclick="addItem(this)">
@@ -52,7 +54,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">dodgy french fries</p>
+            <div class="title">
+                <p>dodgy french fries</p>
+            </div>
             <img src="./img/frites.jpg" alt="frites" />
             <div class="text">
                 <button class="btn_items" id="2" onclick="addItem(this)">
@@ -66,7 +70,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">dopamine in a spoon</p>
+            <div class="title">
+                <p>dopamine in a spoon</p>
+            </div>
             <img src="/img/dessert.jpeg" alt="dessert" />
             <div class="text">
                 <button class="btn_items" id="3" onclick="addItem(this)">
@@ -79,7 +85,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">meh burger</p>
+            <div class="title">
+                <p>ok tier burger</p>
+            </div>
             <img src="img/burger.webp" alt="burger" />
             <div class="text">
                 <button class="btn_items" id="0" onclick="addItem(this)">
@@ -92,7 +100,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">average lemonade</p>
+            <div class="title">
+                <p>bubbleless soda</p>
+            </div>
             <img src="img/boisson.jpg" alt="boisson" />
             <div class="text">
                 <button class="btn_items" id="1" onclick="addItem(this)">
@@ -106,7 +116,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">dodgy french fries</p>
+            <div class="title">
+                <p>dodgy french fries</p>
+            </div>
             <img src="./img/frites.jpg" alt="frites" />
             <div class="text">
                 <button class="btn_items" id="2" onclick="addItem(this)">
@@ -120,7 +132,9 @@
         </div>
 
         <div class="items">
-            <p class="items_title">dopamine in a spoon</p>
+            <div class="title">
+                <p>dopamine in a spoon</p>
+            </div>
             <img src="/img/dessert.jpeg" alt="dessert" />
             <div class="text">
                 <button class="btn_items" id="3" onclick="addItem(this)">
@@ -135,10 +149,10 @@
     </div>
 
     <div class="order">
-        <button class="item_order" onclick="order()">
+        <button class="item_order" id="clik" onclick="clique()">
             <p id="btn_order">Place order</p>
         </button>
-        <p id="totalprice"></p>
+        <p id="totalprice">Total price : 0€</p>
         <p id="ordereditems"></p>
     </div>
 
