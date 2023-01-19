@@ -109,6 +109,7 @@ html, body {
     width: 50%;
     padding: 10px;
     border: 10px ridge rgb(255, 223, 223);
+    
 }
 
 
@@ -171,6 +172,10 @@ h1, p {
     color: rgb(0, 0, 0);
     font-size: 1.6rem;
     font-weight: bolder;
+}
+
+#jump {
+    margin-top: 2em;
 }
 
 @media only screen and (max-width: 550px) {
